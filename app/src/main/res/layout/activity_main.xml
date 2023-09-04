@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <android.widget.LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/sample"
+
+        />
+
+     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="MEMBER LOGIN"
+            android:textSize="35sp"
+            style="@style/Base.CardView"
+            android:layout_gravity="center"
+            android:layout_marginStart="80dp"/>
+
+    </LinearLayout>
+
+
+    <EditText
+        android:drawableLeft="@drawable/person_ion"
+        android:layout_width="280dp"
+        android:background="@drawable/border"
+
+        android:layout_height="62dp"
+        android:hint="  User-Name"
+        android:textSize="35sp"
+        android:layout_marginEnd="25dp"
+        android:inputType="text"
+        android:layout_marginStart="55dp"
+        android:gravity="center_vertical"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="72dp">
+
+        <EditText
+            android:id="@+id/SignUPForgot"
+            android:layout_width="280dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="50dp"
+
+            android:background="@drawable/border"
+
+
+            android:drawableLeft="@drawable/baseline_lock_24"
+            android:hint=" Password"
+            android:inputType="textPassword"
+            android:textSize="35sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="60dp"
+        >
+
+        <CheckBox
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginStart="40dp"
+            android:text="Remember me "
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/loginForgot"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginStart="25dp"
+            android:text="  Forgot Password ?"
+            android:textSize="15sp"
+            android:textStyle="bold"
+
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/LogimKey"
+        android:layout_width="100dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:text="LOGIN"
+        android:textSize="15dp"
+
+
+        />
+
+    <TextView
+        android:id="@+id/signup"
+
+        android:layout_width="204dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/border"
+      android:textSize="25dp"
+        android:gravity="center"
+        android:text="Sign Up"
+
+
+        />
+</android.widget.LinearLayout>

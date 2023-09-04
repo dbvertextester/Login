@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OTP">
+
+    <LinearLayout
+        android:id="@+id/Layout1"
+        android:layout_width="399dp"
+        android:layout_height="131dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="70dp"
+            android:text="A OTP has been sent to your Email Address
+                              and it is valid only 5 Minites"
+            android:textSize="25dp"
+            android:textStyle="italic"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/textOTP"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="4dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Layout1"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="325dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="70dp"
+
+            android:gravity="start"
+            android:text=" Please Enter OTP"
+            android:textSize="25dp"
+            android:textStyle="italic|bold"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="400dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/textOTP"
+        app:layout_constraintTop_toBottomOf="@+id/textOTP">
+
+        <EditText
+            android:layout_width="325dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="70dp"
+            android:background="@drawable/outline"
+            android:hint="  Enter OTP"
+            android:inputType="number"
+            android:textSize="25dp"
+            android:textStyle="italic|bold"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="400dp"
+        android:layout_height="54dp"
+
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/otpSubmit"
+            android:layout_width="225dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/outline"
+            android:hint="  Submit"
+            android:inputType="number"
+            android:textSize="25dp"
+            android:textStyle="italic|bold"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="399dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="31dp"
+            android:gravity="center"
+
+            android:text="Not recived an OTP ?"
+            android:textSize="15dp"
+            android:textStyle="italic|bold"
+
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+
+            android:text="resend otp "
+            android:textSize="15dp"
+            android:textStyle="italic|bold"
+
+            />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
